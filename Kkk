@@ -1,0 +1,10 @@
+_G.FARM = true -- true = เปิด  /  false = ปิด
+
+function click()
+    game:GetService'VirtualUser':CaptureController()
+   game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+end
+
+while _G.FARM do  wait()
+click()
+end
